@@ -5,8 +5,6 @@ async function loadUsers() {
     const response = await axios.get("http://localhost:1234/api/users");
 
     const users = response.data.user;
-    console.log(users);
-
     tableBody.innerHTML = "";
 
     users.forEach((user) => {
